@@ -1,0 +1,117 @@
+header {
+  text-align : center;
+  background-color: rgb(2, 2, 108) ;
+  color:white ;
+}
+nav a{
+  color: rgb(15, 2, 98) ;
+  margin-right: 10px;
+  font-weight : rgb(199, 111, 3) ;
+  
+}
+nav{ 
+  text-align: center ;
+}
+nav a:hover{
+  color:rgb(199, 111, 3) ;
+  
+}
+body { 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:17px;
+  background-color:aliceblue;
+  color:rgb(201, 247, 247);
+  margin:20px;
+}
+main{ /*notes a moi meme*/
+    padding: 20px;
+}
+section h2 {
+  color: #02026c;
+  font-size:1.5em;
+  text-align:center;
+}
+section p {
+  color: #000000;
+  text-align: center;
+}
+.grid-container {
+  display: flex; /*ca veut pas marcher*/ 
+  justify-content: center;  /* pour centrer les cartes */
+  gap: 20px;       /* pour faire l'espace entre les cartes */
+  padding: 40px; /* l'espace entre le contenu de la carte et ses bordures*/
+  flex-wrap: wrap;  /* pour faire le retour à la ligne sur petits écrans */
+
+}
+
+.card {
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  background-color: #0b0132;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #d7deeb;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(58, 1, 1, 0.1);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.card:hover { 
+  transform: scale(1.05); /* on a applique une sorte de zoom de 5%*/
+  background-color: #e91010; /* couleur de la carte une fois le zoom applique */
+}
+
+/* on remarque que rien n'est defini dans le footer pour le css dcp, il prend la couleur définie dans body { color: rgb(201, 247, 247); } */
+footer {
+  text-align: center;
+  background-color: #02026c; 
+  color: rgb(226, 222, 222); /*la couleur du texte */
+  padding: 15px;
+}
+footer a { /*jsplu quelle couleur a ete mise par defaut*/
+  color:#d7deeb;
+
+}
+table { /*notes a moi meme*/
+  border-collapse: collapse; /* pour que les bordures soient fines et nettes */
+  width: 100%; /* le tableau prend toute la largeur de la page */
+}
+
+th, td {
+  border: 1px solid #000; /* bordure fine */
+  padding: 8px; /* espace à l'intérieur des cellules */
+  color: #0a0000; /* couleur du texte */
+}
+
+th:first-child, td:first-child {
+  width: 30%; /* première colonne moins large */
+}
+
+th:last-child, td:last-child {
+  width: 70%; /* deuxième colonne plus large */
+}
+ header figure {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+ }
+
+ header figure img {
+  width:130px;
+  height: auto;
+  border-radius: 50%; /* image ronde */ 
+  border: 5px solid #a90d0d;
+ }
+
+ header figure figcaption {
+
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #fcfbfb;
+
+ }
+    
