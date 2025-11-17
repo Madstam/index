@@ -35,14 +35,37 @@ section p {
   color: #000000;
   text-align: center;
 }
-.grid-container {
-  display: flex; /*ca veut pas marcher*/ 
-  justify-content: center;  /* pour centrer les cartes */
-  gap: 20px;       /* pour faire l'espace entre les cartes */
-  padding: 40px; /* l'espace entre le contenu de la carte et ses bordures*/
-  flex-wrap: wrap;  /* pour faire le retour à la ligne sur petits écrans */
-
+/* jai du mettre un grand container dans une div qui reuniras les deux differentes sections que jai voulu mettre lune a cote de lautre sur une meme ligne , mais chacune contient deux colonnes pour ce qui concerne les cartes qui sont contenues donc dans une div chacune  */
+.main-container {
+  display: flex;              /* met les sections côte à côte */
+  gap: 40px;                  /* espace entre la section et les cartes */
+  justify-content: center;    /* centre horizontalement */
+  align-items: flex-start;    /* aligne en haut */
+  flex-wrap: wrap;            /* sur petit écran, les sections passent en dessous */
 }
+
+/* style pour la section "A propos" */
+.about-section {
+  border: 2px solid #02026c;  /* bordure autour de la section */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;            /* largeur max */
+  background-color: #f0f8ff;   /* léger fond pour contraster */
+  color: #000;
+}
+
+/* ajuste les cartes si nécessaire */
+.grid-container1 {
+  display: flex;
+  gap: 40px;
+}
+
+.grid-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 
 .card {
   display: flex ;
